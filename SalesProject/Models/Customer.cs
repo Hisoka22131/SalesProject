@@ -8,5 +8,6 @@
         public string? Country { get; set; }
         public string? Phone { get; set; }
         public virtual IEnumerable<Order> Orders { get; set; } = new List<Order>();
+        public string? FullName => FirstName + " " + LastName;
     }
 }

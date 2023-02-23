@@ -7,7 +7,7 @@ namespace SalesProject.Context
     public class ApplicationContext : DbContext
 
     {
-        private const string ConnectionString = @"Server=.\;Database=SalesDB;Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True";
+        //private const string ConnectionString = @"Server=.\;Database=SalesDB;Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True";
 
         public DbSet<Supplier> Supplier { get; set; } = null!;
         public DbSet<Customer> Customer { get; set; } = null!;
@@ -18,8 +18,7 @@ namespace SalesProject.Context
         public ApplicationContext(DbContextOptions<ApplicationContext> options)
         : base(options)
         {
-            //Database.EnsureDeleted();
-            //Database.EnsureCreated();
+
         }
 
         /// <summary>

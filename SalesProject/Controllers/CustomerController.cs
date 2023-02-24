@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
+using SalesProject.Dto.CustomerDto;
 using SalesProject.Models;
-using SalesProject.Repository;
 using SalesProject.UnitOfWork;
 
 namespace SalesProject.Controllers
@@ -19,9 +17,8 @@ namespace SalesProject.Controllers
         // GET: CustomerController
         public ActionResult Index()
         {
-            var customers = _unitOfWork.GetRepository<Customer>().GetEntities();
-
-            return View();
+            CustomerListDto customerListDto = new(_unitOfWork.GetRepository<Customer>().GetEntities());
+            return View(customerListDto);
         }
 
         // GET: CustomerController/Details/5

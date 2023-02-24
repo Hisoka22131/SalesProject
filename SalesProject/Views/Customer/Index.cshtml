@@ -1,0 +1,11 @@
+﻿@model SalesProject.Dto.CustomerDto.CustomerListDto
+
+<table class="table">
+    <tr><td>Номер</td></tr>
+    @foreach (var item in Model.Customers)
+    {
+        <tr>
+            <td>@item.FirstName</td>
+        </tr>
+    }
+</table>

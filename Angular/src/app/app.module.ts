@@ -3,8 +3,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { PropertyCardComponent } from './property/property-card/property-card.component';
-import { PropertyListComponent } from './property-list/property-list.component';
+import { PropertyListComponent } from './property/property-list/property-list.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { ApplicationService } from './services/application.service';
+import { PropertiesService } from './services/properties.service';
 
 @NgModule({
   declarations: [
@@ -12,12 +14,10 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     PropertyCardComponent,
     PropertyListComponent,
     PropertyCardComponent,
-    NavBarComponent
+    NavBarComponent,
   ],
-  imports: [
-    BrowserModule, HttpClientModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, HttpClientModule],
+  providers: [ApplicationService, PropertiesService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

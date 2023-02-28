@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { environment } from 'environments/environments';
+import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment.development';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,7 @@ import { environment } from 'environments/environments';
 
 export class AppComponent {
 
+ constructor(http: HttpClient){
+  // http.get<Observable<any>[]>(environment.baseUrl + "/weatherforecast").subscribe(result => console.log(result))
+ }
 }

@@ -1,0 +1,10 @@
+<div class="col-sm-12">
+  <button class="btn btn default green" title="Add product" routerLink="/add-product"><i class="fa fa-plus"></i></button>
+  </div>
+  <div class="row">
+    <div *ngFor="let product of products" class="col-sm-3">
+      <div class="card shadow-lg p-3 mb-4">
+        <app-product-card [product]="product"></app-product-card>
+      </div>
+    </div>
+  </div>

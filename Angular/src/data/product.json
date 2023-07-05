@@ -1,0 +1,30 @@
+[
+  {
+    "Id": 1,
+    "productName": "Chai",
+    "unitPrice": 18,
+    "package": "10 boxes x 20 bags",
+    "isDiscontinued": false
+  },
+  {
+    "Id": 2,
+    "productName": "Aniseed Syrup",
+    "unitPrice": 18,
+    "package": "10 boxes x 20 bags",
+    "isDiscontinued": false
+  },
+  {
+    "Id": 3,
+    "productName": "Chef Anton's Cajun Seasoning",
+    "unitPrice": 18,
+    "package": "10 boxes x 20 bags",
+    "isDiscontinued": false
+  },
+  {
+    "Id": 4,
+    "productName": "Chef Anton's Gumbo Mix",
+    "unitPrice": 18,
+    "package": "10 boxes x 20 bags",
+    "isDiscontinued": false
+  }
+]

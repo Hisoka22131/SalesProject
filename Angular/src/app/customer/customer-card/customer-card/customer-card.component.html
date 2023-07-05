@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-img-wrapper">
+    <img class="card-img-top" src="assets/images/employee.png" />
+    <ul class="list-inline text-center member-icons animate">
+      <li class="list-inline-item">
+        <button class="btn btn-default btn-sm coral" title="Редактировать"><i class="fa-solid fa-pen-to-square"></i></button>
+      </li>
+      <li class="list-inline-item">
+        <button class="btn btn-default btn-sm green" title="Подробнее" routerLink="/customer-detail/{{customer.id}}"><i class="fa-solid fa-circle-info"></i></button>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body p-2">
+    <h4>{{ customer.id }}</h4>
+    <h4>{{ customer.firstName + " " + customer.lastName}}</h4>
+    <h5>{{ customer.city + ", " + customer.country }}</h5>
+    <h5>{{ customer.phone }}</h5>
+  </div>
+</div>

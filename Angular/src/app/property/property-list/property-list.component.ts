@@ -16,6 +16,6 @@ export class PropertyListComponent implements OnInit {
     this.propService
       .getAllPeoperties().subscribe(data => {
         this.properties = data
-      });
+      })
   }
 }

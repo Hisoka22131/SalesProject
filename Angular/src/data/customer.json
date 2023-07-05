@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "firstName": "Maria",
+    "lastName": "Anders",
+    "city": "Berlin",
+    "country": "Germany",
+    "phone": "030-0074321"
+  },
+  {
+    "id": 2,
+    "firstName": "Ana",
+    "lastName": "Trujillo",
+    "city": "México D.F.",
+    "country": "Mexico",
+    "phone": "(5) 555-4729"
+  },
+  {
+    "id": 3,
+    "firstName": "Thomas",
+    "lastName": "Hardy",
+    "city": "London",
+    "country": "UK",
+    "phone": "(171) 555-7788"
+  },
+  {
+    "id": 4,
+    "firstName": "Christina",
+    "lastName": "Berglund",
+    "city": "Lulea",
+    "country": "Sweden",
+    "phone": "0921-12 34 65"
+  }
+]

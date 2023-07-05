@@ -1,11 +1,12 @@
-const PROXY_CONFIG = [
-  {
-    context: [
-      "/*",
-    ],
-    target: "https://localhost:7188",
-    secure: false
-  }
-]
+// const PROXY_CONFIG = [
+//   {
+//     context: [
+//       "/*",
+//     ],
+//     target: "https://localhost:7188",//АДРЕС СЕРВЕРА
+//     secure: false
+//   }
+// ]
 
-module.exports = PROXY_CONFIG;
+// module.exports = PROXY_CONFIG;
+//Прокси нужен если мы не будем использовать адрес сервера из environments

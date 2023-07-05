@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-img-wrapper">
+    <img class="card-img-top" src="assets/images/product.png" />
+    <ul class="list-inline text-center member-icons animate">
+      <li class="list-inline-item">
+        <button class="btn btn-default btn-sm coral" title="Редактировать"><i class="fa-solid fa-pen-to-square"></i></button>
+      </li>
+      <li class="list-inline-item">
+        <button class="btn btn-default btn-sm green" title="Подробнее"><i class="fa-solid fa-circle-info"></i></button>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body p-2">
+    <h3>{{ product.Id }}</h3>
+    <h4>{{ product.productName }}</h4>
+    <h5>{{ product.unitPrice }}</h5>
+    <h5>{{ product.package }}</h5>
+    <h5>{{ product.isDiscontinued }}</h5>
+  </div>
+</div>

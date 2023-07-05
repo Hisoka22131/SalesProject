@@ -1,0 +1,12 @@
+<p>
+  customer-detail works!
+  {{customerId}}
+  <button class="btn btn-primary" title="Home" (click)="onSelectNext()">Select next page</button>
+  <button class="btn btn-primary" title="Home" (click)="onBack()"><i class="fa-solid fa-backward"></i></button>
+  <br/><br/>
+  <button class="btn btn-primary" routerLink="/customer-detail/1">1</button>
+  <button class="btn btn-primary" routerLink="/customer-detail/2">2</button>
+  <button class="btn btn-primary" routerLink="/customer-detail/3">3</button>
+  <button class="btn btn-primary" [routerLink]="['/customer-detail','4']">4</button>
+
+</p>

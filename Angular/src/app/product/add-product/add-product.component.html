@@ -1,0 +1,50 @@
+<div class="row mb-5">
+  <div class="col-8">
+<div class="card">
+  <div class="card-header"><h3>Add new product</h3></div>
+  <div class="card-body">
+    <form (ngSubmit)="onSubmit(Form)" #Form="ngForm">
+      <div>
+        <tabset>
+          <tab heading="Basic info" id="tab1">
+            <div class="form-group col-12">
+              <label for="Name">Product name</label>
+              <input type="text" class="form-control" [(ngModel)]="productView.productName" name="productName"/>
+            </div>
+            <div class="form-group col-12">
+              <label for="package">Package</label>
+              <input type="text" class="form-control" [(ngModel)]="productView.package" name="package"/>
+            </div>
+            <div class="form-group col-12">
+              <label for="package">Discontinued</label>
+            </div>
+            <div class="btn-group" btnRadioGroup [(ngModel)]="productView.isDiscontinued" name="isDiscontinued">
+              <label class="btn btn-outline-primary m-2" btnRadio="1" role="button" name="Yes">Yes</label>
+              <label class="btn btn-outline-primary m-2" btnRadio="2" role="button" name="No">No</label>
+            </div>
+            <div class="form-group col-12">
+              <label for="unitPrice">Unit price</label>
+              <input type="number" class="form-control" [(ngModel)]="productView.unitPrice" name="unitPrice"/>
+            </div>
+            <div class="form-group col-12">
+<!--              <button [disabled]="Form.invalid" type="submit" class="btn btn-primary">Save</button>-->
+              <button type="submit" class="btn btn-primary">Save</button>
+              <button type="reset" class="btn btn-primary m-2">Cancel</button>
+            </div>
+          </tab>
+          <tab heading="Photos" id="tab2"></tab>
+        </tabset>
+      </div>
+    </form>
+  </div>
+</div>
+  </div>
+  <div class="col-4">
+    <div class="card-header">
+    Your product preview
+    <div>
+      <app-product-card [product]="productView"></app-product-card>
+    </div>
+  </div>
+  </div>
+</div>

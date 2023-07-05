@@ -1,0 +1,39 @@
+<div class="card">
+  <div class="card-header">Add New Customer</div>
+  <div class="card-body">
+    <form (ngSubmit)="onSubmit(Form)" #Form="ngForm">
+      <div class="form-group col-12">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" #custName="ngModel" ngModel name="firstName" required minlength="5"/>
+        <span *ngIf="!custName.valid && custName.touched" class="error-block">
+          <span *ngIf="custName.errors?.required">
+            Please provide First name
+           </span>
+           <span *ngIf="custName.errors?.minlength">
+            Name nust be atleast 5 char long
+           </span>
+        </span>
+      </div>
+      <div class="form-group col-12">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" ngModel name="lastName"/>
+      </div>
+      <div class="form-group col-12">
+        <label for="city">City</label>
+        <input type="text" class="form-control" ngModel name="city"/>
+      </div>
+      <div class="form-group col-12">
+        <label for="country">Country</label>
+        <input type="text" class="form-control" ngModel name="country"/>
+      </div>
+      <div class="form-group col-12">
+        <label for="phone">Phone</label>
+        <input type="text" class="form-control" ngModel name="phone"/>
+      </div>
+      <div class="form-group col-12">
+        <button [disabled]="Form.invalid" type="submit" class="btn btn-primary">Save</button>
+        <button type="reset" class="btn btn-primary m-2">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
